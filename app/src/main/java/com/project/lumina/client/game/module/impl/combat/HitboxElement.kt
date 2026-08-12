@@ -20,8 +20,8 @@ class HitboxElement(iconResId: Int = AssetManager.getAsset("ic_box")) : Element(
     displayNameResId = AssetManager.getString("module_hitbox_display_name")
 ) {
 
-    private val hitboxWidth by floatValue("Width", 1.5f, 0.5f..8f)
-    private val hitboxHeight by floatValue("Height", 1.5f, 0.5f..8f)
+    private val hitboxWidth by floatValue("Width", 1.5f, 0.5f..30f)
+    private val hitboxHeight by floatValue("Height", 1.5f, 0.5f..30f)
     private var playersOnly by boolValue("Players", true)
     private var mobsOnly by boolValue("Mobs", false)
     private val particleCount =  8
