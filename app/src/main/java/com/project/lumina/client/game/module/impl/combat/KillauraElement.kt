@@ -16,11 +16,11 @@ class KillauraElement(iconResId: Int = AssetManager.getAsset("ic_sword_cross_bla
     iconResId,
     displayNameResId = AssetManager.getString("module_killaura_display_name")
 ) {
-    private val playerOnly by boolValue("Players", false)
-    private val mobsOnly by boolValue("Mobs", true)
-    private val range by floatValue("Range", 3.7f, 2f..7f)
-    private val delay by intValue("Delay", 5, 1..20)
-    private val cps by intValue("CPS", 5, 1..20)
+    private val playerOnly by boolValue("Players", true)
+    private val mobsOnly by boolValue("Mobs", false)
+    private val range by floatValue("Range", 3.7f, 2f..30f)
+    private val delay by intValue("Delay", 5, 1..30)
+    private val cps by intValue("CPS", 5, 1..30)
     private val packets by intValue("Packets", 1, 1..10)
     private val tpAura by boolValue("TP Aura", false)
     private val strafe by boolValue("Strafe", false)
