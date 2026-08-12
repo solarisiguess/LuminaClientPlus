@@ -54,7 +54,7 @@ class ReachElement(iconResId: Int = AssetManager.getAsset("ic_ghost_black_24dp")
 ) {
     
     private var combatReachEnabled by boolValue("Combat", true)
-    private var combatReach by floatValue("PvP Reach", 3f, 3f..6f) 
+    private var combatReach by floatValue("PvP Reach", 3f, 3f..8f) 
 
 
 
